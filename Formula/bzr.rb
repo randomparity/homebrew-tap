@@ -4,6 +4,13 @@ class Bzr < Formula
   license "MIT"
   version "0.4.4"
 
+  bottle do
+    root_url "https://github.com/randomparity/bzr/releases/download/v0.4.4"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "bf5b858e34dbdf83cdd0944dd1221af471330b4eca37e0aaeb482f9af3a5c25c"
+    sha256 cellar: :any_skip_relocation, arm64_linux:  "d425bc244274269779f1b1ffa3087e5d049bce8cbef0eaefe900dcf6cf20a01f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "63b0e2587634c91e4b820652d6aa2c3c7e0d7cc541d4c63e978d0bbddb8659b6"
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/randomparity/bzr/releases/download/v0.4.4/bzr-v0.4.4-aarch64-apple-darwin.tar.gz"
