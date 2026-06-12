@@ -2,29 +2,29 @@ class Bzr < Formula
   desc "CLI for Bugzilla, inspired by gh"
   homepage "https://github.com/randomparity/bzr"
   license "MIT"
-  version "0.4.3"
+  version "0.4.4"
 
   on_macos do
     on_arm do
-      url "https://github.com/randomparity/bzr/releases/download/v0.4.3/bzr-v0.4.3-aarch64-apple-darwin.tar.gz"
-      sha256 "727f28e643997b6569f9d5d811043409b8299c5e67e22ba7907c205e64868a31"
+      url "https://github.com/randomparity/bzr/releases/download/v0.4.4/bzr-v0.4.4-aarch64-apple-darwin.tar.gz"
+      sha256 "39bd262bddbec8e72a383443c6f66cf230e98899a9749b1ca9a0d2cd933b1bc3"
     end
     on_intel do
       # No prebuilt Intel macOS binary — fall back to a source build.
-      url "https://github.com/randomparity/bzr/archive/refs/tags/v0.4.3.tar.gz"
-      sha256 "8074ef11d8ea58dd60e655c7f63efdb1deb680f41319dab80ba056b67b9b5d13"
+      url "https://github.com/randomparity/bzr/archive/refs/tags/v0.4.4.tar.gz"
+      sha256 "b3cf01a075cef8241ff3898c563fb3ef80001775d6073ceb11d08e43663b74b9"
       depends_on "rust" => :build
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/randomparity/bzr/releases/download/v0.4.3/bzr-v0.4.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7c6ad05a798f74327aefe7665b0534e4accce9ac00b8340fe54ffc546d36ed4f"
+      url "https://github.com/randomparity/bzr/releases/download/v0.4.4/bzr-v0.4.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "66f75a547909302139ff1bf2dde7b1e0a340e2930b12fd92eebf1a0161111c34"
     end
     on_intel do
-      url "https://github.com/randomparity/bzr/releases/download/v0.4.3/bzr-v0.4.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "81710db968fa3450bb810f3f0732dc0f20b12ac93dfb462bb726a13127675289"
+      url "https://github.com/randomparity/bzr/releases/download/v0.4.4/bzr-v0.4.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3a07659b1363a44f147c9778fe3160d8668169d972aef266db46a91d1be2abc3"
     end
   end
 
