@@ -2,36 +2,29 @@ class Bzr < Formula
   desc "CLI for Bugzilla, inspired by gh"
   homepage "https://github.com/randomparity/bzr"
   license "MIT"
-  version "0.5.0"
-
-  bottle do
-    root_url "https://github.com/randomparity/bzr/releases/download/v0.5.0"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "99b05f25b3d02fa10aad80163e13f2876adc26a728ecadb9b459457814478d68"
-    sha256 cellar: :any_skip_relocation, arm64_linux:  "c80a71c3a20622418315ebdecac06723f9ba7993671fe38b0ddae0b6d4bb1850"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "dbd9e74d4239e450a67aed3f5d6674a710c403b6f99c7806d9066362ac6e7fc2"
-  end
+  version "0.6.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/randomparity/bzr/releases/download/v0.5.0/bzr-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "a9cba945ca3570ec179e00fcb952b3eb7076233b47fbc497a138ef7564fc000b"
+      url "https://github.com/randomparity/bzr/releases/download/v0.6.0/bzr-v0.6.0-aarch64-apple-darwin.tar.gz"
+      sha256 "928ebe40ea3b5dc1fdd18cb78ea4a73e80bb2f624e4d74c2f3ceb2d515edcea0"
     end
     on_intel do
       # No prebuilt Intel macOS binary — fall back to a source build.
-      url "https://github.com/randomparity/bzr/archive/refs/tags/v0.5.0.tar.gz"
-      sha256 "71d30140a355a9dcc94b5395e685084b15ffdf1ca4f04e78b877f18f996fd7b7"
+      url "https://github.com/randomparity/bzr/archive/refs/tags/v0.6.0.tar.gz"
+      sha256 "d42f129954cce6f05476c6bd5a4a153135310fe83037bb2a2e03392a5229c04f"
       depends_on "rust" => :build
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/randomparity/bzr/releases/download/v0.5.0/bzr-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3a930050dabaa923f68032ab4d76fcbc4ea492aaf323c8f7f465b10a87fb03c1"
+      url "https://github.com/randomparity/bzr/releases/download/v0.6.0/bzr-v0.6.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ff9950ae73e2f4e651e0b46bc6009fbd8869206bc849571cb20199a0d7031c76"
     end
     on_intel do
-      url "https://github.com/randomparity/bzr/releases/download/v0.5.0/bzr-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e311db67f32b4cf47ac58eb813c7cd1ef15443d024d688869e18cbe1d91a26f8"
+      url "https://github.com/randomparity/bzr/releases/download/v0.6.0/bzr-v0.6.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "818246afbb6e19a06db45f0aeec9524d2497cc803232e92bc588b10e90e82676"
     end
   end
 
