@@ -4,6 +4,13 @@ class RustyImapMcp < Formula
   license any_of: ["MIT", "Apache-2.0"]
   version "0.1.0"
 
+  bottle do
+    root_url "https://github.com/randomparity/rusty-imap-mcp/releases/download/v0.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "f946ae3cf65ecef5656f20fc49995f6cecd7554c7eeb888313e3067a66b9714a"
+    sha256 cellar: :any_skip_relocation, arm64_linux:  "9afb87295bda1d1c88979f1487de31b5acd30a85cb78c99df140d2c6f0d6906a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6a1a7e4421177ebb7051c60f186226d7461036c149b24c344f5b52278f0f6400"
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/randomparity/rusty-imap-mcp/releases/download/v0.1.0/rusty-imap-mcp-v0.1.0-aarch64-apple-darwin.tar.gz"
